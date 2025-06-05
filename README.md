@@ -1,6 +1,19 @@
 # Calculator Console Application
 
-This is a simple console-based calculator written in C# targeting **.NET 8**. It allows basic arithmetic operations (+, -, *, /) and continues until the user quits by entering `q` when prompted for the first number.
+This is a console-based calculator written in C# targeting **.NET 8**. It now offers a set of advanced operations and a small memory feature. The calculator prints the phrase `firat maldir` next to every computed result.
+
+Supported operations:
+
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Power
+- Square root
+- Modulus
+- Memory recall (`M` when entering numbers)
+
+Select an operation from the menu and follow the prompts. The last computed result is stored in memory and can be recalled by typing `M` whenever a number is requested.
 
 ## Building and running
 
