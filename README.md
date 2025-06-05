@@ -1,8 +1,10 @@
-# Hello World Projesi
+# VSCode Hello World
 
-Bu basit Python betiğini çalıştırarak terminalde `Hello, world!` mesajını görebilirsiniz.
+Bu depoda basit bir Python "Hello World" programı bulunmaktadır. VSCode ile açıp çalıştırabilirsiniz.
 
 ## Çalıştırma
+
+VSCode'u açın ve `main.py` dosyasını çalıştırmak için entegre terminalde şu komutu kullanın:
 
 ```bash
 python main.py
