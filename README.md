@@ -12,6 +12,9 @@ Supported operations:
 - Square root
 - Modulus
 - Memory recall (`M` when entering numbers)
+- Sine (angle in degrees)
+- Tangent (angle in degrees)
+- Integral of a*x^n over an interval
 
 Select an operation from the menu and follow the prompts. The last computed result is stored in memory and can be recalled by typing `M` whenever a number is requested.
 

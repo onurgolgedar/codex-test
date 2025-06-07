@@ -34,6 +34,9 @@ namespace CalculatorConsole
                 Console.WriteLine("6) Square Root");
                 Console.WriteLine("7) Modulus");
                 Console.WriteLine("8) Memory Recall (M)");
+                Console.WriteLine("9) Sine");
+                Console.WriteLine("10) Tangent");
+                Console.WriteLine("11) Integral of a*x^n");
                 Console.WriteLine("q) Quit");
 
                 Console.Write("Select operation: ");
@@ -102,6 +105,22 @@ namespace CalculatorConsole
                     case "8":
                         Console.WriteLine($"Memory: {memory}");
                         valid = false;
+                        break;
+                    case "9":
+                        var angleSin = GetNumber("Enter angle in degrees: ");
+                        result = Math.Sin(angleSin * Math.PI / 180);
+                        break;
+                    case "10":
+                        var angleTan = GetNumber("Enter angle in degrees: ");
+                        result = Math.Tan(angleTan * Math.PI / 180);
+                        break;
+                    case "11":
+                        var coeff = GetNumber("Enter coefficient a: ");
+                        var exp = GetNumber("Enter exponent n: ");
+                        var start = GetNumber("Enter start of interval: ");
+                        var end = GetNumber("Enter end of interval: ");
+                        result = coeff / (exp + 1) *
+                                 (Math.Pow(end, exp + 1) - Math.Pow(start, exp + 1));
                         break;
                     default:
                         Console.WriteLine("Unknown selection");
